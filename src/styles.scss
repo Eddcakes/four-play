@@ -13,10 +13,6 @@ ul {
   display: table;
 }
 
-.status {
-  margin-bottom: 10px;
-}
-
 .circle {
   background: #fff;
   border-radius: 50%;
@@ -39,18 +35,15 @@ ul {
   background: red;
 }
 
-.kbd-navigation .square:focus {
-  background: #ddd;
-}
-
 .game {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: center;
+  align-items: center;
 }
 
-.game-info {
-  margin-left: 20px;
-}
 .frame {
   padding: 5px;
   background-color: rgb(60, 117, 223);
